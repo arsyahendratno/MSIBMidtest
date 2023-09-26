@@ -9,3 +9,9 @@ FROM (
 GROUP BY num, identifier
 HAVING COUNT(*) >= 3
 ORDER BY num;
+
+-- Test_SQL_2
+SELECT DISTINCT email
+FROM email_list
+GROUP BY email
+HAVING COUNT(*) > 1;
